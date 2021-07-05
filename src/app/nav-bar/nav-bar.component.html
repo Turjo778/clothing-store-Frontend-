@@ -1,0 +1,58 @@
+
+   <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">ClothingStore</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+       
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+         
+          <li class="nav-item">
+            <button (click)=toggleDplayDiv()>MEN </button>
+            
+          </li>
+          <li class="nav-item">
+            <button  (click)=toggleDplayDiv1() >WOMEN </button>
+          </li>
+          
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+
+<div class="MaleCollection" *ngIf="ShowDiv">
+  <div class="items">
+    <br>
+    <br>
+    <a >Pant</a>
+    <a >Shirt</a>
+    <a >Shorts</a>
+    <a >T-Shirt</a>
+  </div>
+  <div class="curvy">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a759f" fill-opacity="0.85" d="M0,256L48,240C96,224,192,192,288,186.7C384,181,480,203,576,197.3C672,192,768,160,864,170.7C960,181,1056,235,1152,261.3C1248,288,1344,288,1392,288L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  </div>
+  
+  
+</div>
+
+<div class="FemaleCollection" *ngIf="ShowDiv1">
+  <div class="items">
+    <br>
+    <br>
+    <a >Sharee</a>
+    <a >Salwar-Kameez</a>
+    <a >Kurti</a>
+    <a >Jeans</a>
+  </div>
+  <div class="curvy">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a759f" fill-opacity="0.85" d="M0,256L48,240C96,224,192,192,288,186.7C384,181,480,203,576,197.3C672,192,768,160,864,170.7C960,181,1056,235,1152,261.3C1248,288,1344,288,1392,288L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  </div>
+</div>
